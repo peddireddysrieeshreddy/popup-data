@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  background-color: #edf2e8;
+}
+.container2 {
+  height: 35vh;
+  background-color: whitesmoke;
+  margin: 0 auto 5px auto;
+  text-align: justify;
+  padding-left: 200px;
+  padding-top: 10px;
+  padding-right: 200px;
+}
+
+.input {
+  width: 55%;
+  height: 45px;
+  margin: 20px auto 5px auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.button {
+  width: 30%;
+  height: 50px;
+  margin-top: 20px;
+  color: white;
+  background-color: #143b44;
+  border-radius: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+.pop-upPage {
+  background-color: #dcb0a4;
+  height: 100vh;
+}

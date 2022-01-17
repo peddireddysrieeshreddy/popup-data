@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Page1 from "./components/Page1";
+
+import React, { useState } from "react";
 
 function App() {
+  const [toggle, setToggle] = useState(false);
+  const [data1, setData1] = useState("");
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="title">POP-UP DATA</h1>
       </header>
+      {!toggle && (
+        <Page1 setToggle={setToggle} data1={data1} setData1={setData1} />
+      )}
     </div>
   );
 }
